@@ -19,12 +19,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun calcularIMC(){
-        var peso = editPeso.text.toString().toDouble()
-        var altura = editAltura.text.toString().toDouble()
-        var imc = peso / (altura * altura)
+        if(editPeso.text.isEmpty()){
+            editPeso.error = getString(R.string.erro_peso)
 
-        resultado.text = imc.toString()
+        }else if(editAltura.text.isEmpty()){
+            editAltura.error = getString(R.string.erro_altura)
+        }else{
 
-        Toast.makeText(this, "Meu primeiro programa Android", Toast.LENGTH_LONG).show()
+
+            var imc = imc()
+            //Cálculos não podem ser feitos no MainActivity, por isso fora criado um novo arquivo
+            imc.peso = editPeso.text.toString().toDouble()
+            imc.altura = editAltura.text.toString().toDouble()
+            resultado.text = imc.calcularIMC().toString()
+
+            Toast.makeText(this, "Meu primeiro programa Android", Toast.LENGTH_LONG).show()
+        }
     }
 }

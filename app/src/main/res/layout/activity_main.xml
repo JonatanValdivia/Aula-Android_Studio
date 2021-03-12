@@ -11,9 +11,11 @@
     >
 
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Peso:"
+        android:text="@string/str_peso"
+        android:textStyle="bold"
         android:layout_marginTop="20dp"
 
        />
@@ -24,15 +26,17 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:inputType="numberDecimal"
-        android:textColor="#503285"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="10dp"
-        android:hint="Digite o seu peso... ex. 88.8"
+        android:hint="@string/hint_peso"
         />
 
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Altura:"
+        android:text="@string/str_altura"
+        android:textStyle="bold"
         android:layout_marginTop="20dp"
         />
 
@@ -43,14 +47,14 @@
         android:textSize="24sp"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
-        android:textColor="#503285"
-        android:hint="Digite a sua altura... ex. 1.80"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/hint_altura"
         />
    <Button
        android:id="@+id/button_calcular"
        android:layout_width="250dp"
        android:layout_height="60dp"
-       android:text="Calcular"
+       android:text="@string/calcular"
        android:layout_marginTop="48dp"
        android:background="@color/colorPrimary"
        android:textColor="#ffffff"

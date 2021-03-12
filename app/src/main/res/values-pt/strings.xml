@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora IMC</string>
+    <string name="str_peso">Peso do aluno</string>
+    <string name="str_altura">Altura do aluno</string>
+    <string name="hint_peso">Digite o seu peso... ex. 88.8</string>
+    <string name="hint_altura">Digite a sua altura... ex. 1.80</string>
+    <string name="calcular">Calcular</string>
+    <string name="erro_peso">Peso é obrigatório!</string>
+    <string name="erro_altura">Altura é obrigatório!</string>
+</resources>
